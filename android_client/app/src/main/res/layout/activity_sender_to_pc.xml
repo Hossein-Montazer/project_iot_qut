@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SenderToPc">
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="port"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/ipAddress"
+        android:layout_alignLeft="@id/ipAddress"
+        android:layout_marginBottom="@dimen/ButtonSender"/>
+    <EditText
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/EnterYourMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textMessage"
+        android:layout_marginBottom="@dimen/ButtonSender"
+        android:layout_alignLeft="@id/textMessage"
+        android:hint="@string/IpAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/ButtonSender"
+        android:layout_marginTop="@dimen/ButtonSender"
+        android:layout_marginEnd="@dimen/ButtonSender"
+        android:layout_marginBottom="@dimen/ButtonSender"
+        android:onClick="button_click"
+        android:text="@string/Send" />
+</RelativeLayout>

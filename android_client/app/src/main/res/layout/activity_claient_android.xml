@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientAndroid">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtMsg"
+        android:layout_above="@id/txtPort"
+        android:layout_marginBottom="@dimen/mainText"
+        android:hint="@string/IpAddress"
+        android:id="@+id/txtIp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtMsg"
+        android:layout_above="@id/txtMsg"
+        android:layout_marginBottom="@dimen/mainText"
+        android:hint="Enter your port"
+        android:id="@+id/txtPort"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/EnterYourMessage"
+        android:id="@+id/txtMsg"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Send"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtMsg"
+        android:layout_margin="@dimen/mainText"
+        android:id="@+id/send"/>
+</RelativeLayout>
